@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/VolleyballScoreboard/static/css/main.c0e68a5f.chunk.css",
+    "main.js": "/VolleyballScoreboard/static/js/main.c251f063.chunk.js",
+    "main.js.map": "/VolleyballScoreboard/static/js/main.c251f063.chunk.js.map",
+    "runtime-main.js": "/VolleyballScoreboard/static/js/runtime-main.7e9103cb.js",
+    "runtime-main.js.map": "/VolleyballScoreboard/static/js/runtime-main.7e9103cb.js.map",
+    "static/js/2.1695fe3f.chunk.js": "/VolleyballScoreboard/static/js/2.1695fe3f.chunk.js",
+    "static/js/2.1695fe3f.chunk.js.map": "/VolleyballScoreboard/static/js/2.1695fe3f.chunk.js.map",
+    "static/js/3.d24204ba.chunk.js": "/VolleyballScoreboard/static/js/3.d24204ba.chunk.js",
+    "static/js/3.d24204ba.chunk.js.map": "/VolleyballScoreboard/static/js/3.d24204ba.chunk.js.map",
+    "index.html": "/VolleyballScoreboard/index.html",
+    "static/css/main.c0e68a5f.chunk.css.map": "/VolleyballScoreboard/static/css/main.c0e68a5f.chunk.css.map",
+    "static/js/2.1695fe3f.chunk.js.LICENSE.txt": "/VolleyballScoreboard/static/js/2.1695fe3f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e9103cb.js",
+    "static/js/2.1695fe3f.chunk.js",
+    "static/css/main.c0e68a5f.chunk.css",
+    "static/js/main.c251f063.chunk.js"
+  ]
+}
