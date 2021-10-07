@@ -13,8 +13,15 @@
   }
 }
 
+.vertical-row {
+  Float:left;
+  height:400px;
+  width:2px; /* edit this if you want */
+  background-color: black;
+ } 
+
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
