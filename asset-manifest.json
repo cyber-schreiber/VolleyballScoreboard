@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/VolleyballScoreboard/static/css/main.6397509b.chunk.css",
-    "main.js": "/VolleyballScoreboard/static/js/main.7d12a6f1.chunk.js",
-    "main.js.map": "/VolleyballScoreboard/static/js/main.7d12a6f1.chunk.js.map",
+    "main.js": "/VolleyballScoreboard/static/js/main.a6c7f230.chunk.js",
+    "main.js.map": "/VolleyballScoreboard/static/js/main.a6c7f230.chunk.js.map",
     "runtime-main.js": "/VolleyballScoreboard/static/js/runtime-main.e09ad4c9.js",
     "runtime-main.js.map": "/VolleyballScoreboard/static/js/runtime-main.e09ad4c9.js.map",
     "static/js/2.c99c3298.chunk.js": "/VolleyballScoreboard/static/js/2.c99c3298.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.e09ad4c9.js",
     "static/js/2.c99c3298.chunk.js",
     "static/css/main.6397509b.chunk.css",
-    "static/js/main.7d12a6f1.chunk.js"
+    "static/js/main.a6c7f230.chunk.js"
   ]
 }
