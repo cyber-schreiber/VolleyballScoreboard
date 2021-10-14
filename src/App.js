@@ -159,7 +159,7 @@ export default class App extends React.Component {
           </div>
           <div style={{display: 'flex', marginBottom: 20}}><div onClick={() => this.setState({wantsToClear: true})} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 20, color: 'black', height: 30, width: 110, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer'}}>clear all</div>
           {this.state.wantsToClear && <div onClick={() => this.setState({wantsToClear: false})} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 20, color: 'black', height: 30, width: 110, marginLeft: 10, marginRight: 10, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer'}}>cancel</div>}
-          {this.state.wantsToClear && <div onClick={() => this.setState({wantsToClear: false, setScores: [], heightsSets: 0, otherSets: 0})} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 20, color: 'black', height: 30, width: 110, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer'}}>confirm</div>}</div>
+          {this.state.wantsToClear && <div onClick={() => this.setState({wantsToClear: false, setScores: [], heightsSets: 0, otherSets: 0, heightsScore: 0, otherScore: 0})} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 20, color: 'black', height: 30, width: 110, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer'}}>confirm</div>}</div>
 
         </div>
         
