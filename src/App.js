@@ -90,59 +90,68 @@ export default class App extends React.Component {
 
           <div style={{display: 'flex', marginTop: 20}}>Win by 2? <div style={{width: 10}}/><input style={{height: 30}} type="checkbox" checked={this.state.winBy2} defaultChecked={true} onChange={val => this.setState({winBy2: val.target.checked})}/></div>
 
-            <hr style={{color: 'black', width: 400}}/>
-            <div style={{display: 'flex',}}>
+            <hr style={{color: 'black', width: 360}}/>
+            <div style={{display: 'flex',color: 'black', alignItems: 'center', justifyContent: 'center'}}>
 
-              <div style={{width: 100}}>
+              <div >
                 <b>Heights</b>
-                <div style={{display: 'flex', marginTop: 20}}>
-                  Sets: <div style={{width: 10}}/><b> {this.state.heightsSets}</b>
+                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                  <div style={{display: 'flex', marginTop: 20, marginBottom: 20}}>
+                    Sets: <div style={{width: 10, }}/><b>{this.state.heightsSets}</b>
+                  </div>
+                  
+
+
+                  <div style={{display: 'flex'}}>
+                    <div onClick={() => this.setHeightsScore(this.state.heightsScore-1)} style={{fontSize: 22, marginLeft: 20, height: 30, width: 30, borderStyle: 'solid', borderWidth: 3, borderRadius: '50%', cursor: 'pointer'}}>-</div>
+                    <div onClick={() => this.setHeightsScore(0)} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 20, height: 30, width: 100, borderStyle: 'solid', borderWidth: 3, cursor: 'pointer', borderRadius: 12}}>reset</div>
+                  </div>
                 </div>
-                <div style={{display: 'flex', marginTop: 20}}>
+              </div>  
+
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: 40}}>
+                <div onClick={() => this.setHeightsScore(this.state.heightsScore+1)} style={{backgroundColor: '#80FF72', marginBottom: 20, height: 60, width: 100, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>+ point</div>
+                
+                <div style={{display: 'flex', }}>
                   Score: <div style={{width: 10}}/><b> {this.state.heightsScore}</b>
                   
                 </div>
-              </div>  
-
-              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <div onClick={() => this.setHeightsScore(this.state.heightsScore+1)} style={{backgroundColor: '#80FF72', marginBottom: 20, marginLeft: 50, height: 60, width: 100, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>+ point</div>
-                
-                <div style={{display: 'flex'}}>
-                  <div onClick={() => this.setHeightsScore(this.state.heightsScore-1)} style={{fontSize: 22, marginLeft: 20, height: 30, width: 30, borderStyle: 'solid', borderWidth: 3, borderRadius: '50%', cursor: 'pointer'}}>-</div>
-                  <div onClick={() => this.setHeightsScore(0)} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 20, height: 30, width: 100, borderStyle: 'solid', borderWidth: 3, cursor: 'pointer', borderRadius: 12}}>reset</div>
-                </div>
               </div>
 
 
             </div>
-            
           </div>
-          <hr  style={{color: 'black', width: 400}}/>
+          <hr  style={{color: 'black', width: 360}}/>
           <div style={{display: 'flex',color: 'black', alignItems: 'center', justifyContent: 'center'}}>
 
-              <div style={{width: 100}}>
+              <div >
                 <b>Others</b>
-                <div style={{display: 'flex', marginTop: 20}}>
-                  Sets: <div style={{width: 10}}/><b> {this.state.otherSets}</b>
+                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                  <div style={{display: 'flex', marginTop: 20, marginBottom: 20}}>
+                    Sets: <div style={{width: 10, }}/><b>{this.state.otherSets}</b>
+                  </div>
+                  
+
+
+                  <div style={{display: 'flex'}}>
+                    <div onClick={() => this.setOtherScore(this.state.otherScore-1)} style={{fontSize: 22, marginLeft: 20, height: 30, width: 30, borderStyle: 'solid', borderWidth: 3, borderRadius: '50%', cursor: 'pointer'}}>-</div>
+                    <div onClick={() => this.setOtherScore(0)} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 20, height: 30, width: 100, borderStyle: 'solid', borderWidth: 3, cursor: 'pointer', borderRadius: 12}}>reset</div>
+                  </div>
                 </div>
-                <div style={{display: 'flex', marginTop: 20}}>
+              </div>  
+
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: 40}}>
+                <div onClick={() => this.setOtherScore(this.state.otherScore+1)} style={{backgroundColor: '#80FF72', marginBottom: 20, height: 60, width: 100, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>+ point</div>
+                
+                <div style={{display: 'flex', }}>
                   Score: <div style={{width: 10}}/><b> {this.state.otherScore}</b>
                   
                 </div>
-              </div>  
-
-              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <div onClick={() => this.setOtherScore(this.state.otherScore+1)} style={{backgroundColor: '#80FF72', marginBottom: 20, marginLeft: 40, height: 60, width: 100, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>+ point</div>
-                
-                <div style={{display: 'flex'}}>
-                  <div onClick={() => this.setOtherScore(this.state.otherScore-1)} style={{fontSize: 22, marginLeft: 20, height: 30, width: 30, borderStyle: 'solid', borderWidth: 3, borderRadius: '50%', cursor: 'pointer'}}>-</div>
-                  <div onClick={() => this.setOtherScore(0)} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 20, height: 30, width: 100, borderStyle: 'solid', borderWidth: 3, cursor: 'pointer', borderRadius: 12}}>reset</div>
-                </div>
               </div>
 
 
             </div>
-            <hr style={{width: 400}}/>
+            <hr style={{width: 360}}/>
 
 
           <div style={{display: 'flex', color: 'black', justifyContent: 'center'}}>
