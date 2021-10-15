@@ -15,6 +15,13 @@ export default class App extends React.Component {
       setScores: [],
       wantsToClear: false,
     }
+
+    this.isMobile = true;
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
   }
 
   setHeightsSets(val){
@@ -77,7 +84,7 @@ export default class App extends React.Component {
   render(){
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" style={{height: this.isMobile ? '90vh' : '100vh', }}>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <div style={{width: 400, color: 'black', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           
@@ -96,7 +103,7 @@ export default class App extends React.Component {
               <div >
                 <b>Heights</b>
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-                  <div style={{display: 'flex', marginTop: 20, marginBottom: 20}}>
+                  <div style={{display: 'flex', marginTop: 15, marginBottom: 15}}>
                     Sets: <div style={{width: 10, }}/><b>{this.state.heightsSets}</b>
                   </div>
                   
@@ -109,8 +116,8 @@ export default class App extends React.Component {
                 </div>
               </div>  
 
-              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: 40}}>
-                <div onClick={() => this.setHeightsScore(this.state.heightsScore+1)} style={{backgroundColor: '#80FF72', marginBottom: 20, height: 60, width: 100, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>+ point</div>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: 30}}>
+                <div onClick={() => this.setHeightsScore(this.state.heightsScore+1)} style={{backgroundColor: '#80FF72', marginBottom: 15, height: 60, width: 100, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>+ point</div>
                 
                 <div style={{display: 'flex', }}>
                   Score: <div style={{width: 10}}/><b> {this.state.heightsScore}</b>
@@ -127,7 +134,7 @@ export default class App extends React.Component {
               <div >
                 <b>Others</b>
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-                  <div style={{display: 'flex', marginTop: 20, marginBottom: 20}}>
+                  <div style={{display: 'flex', marginTop: 15, marginBottom: 15}}>
                     Sets: <div style={{width: 10, }}/><b>{this.state.otherSets}</b>
                   </div>
                   
@@ -140,8 +147,8 @@ export default class App extends React.Component {
                 </div>
               </div>  
 
-              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: 40}}>
-                <div onClick={() => this.setOtherScore(this.state.otherScore+1)} style={{backgroundColor: '#80FF72', marginBottom: 20, height: 60, width: 100, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>+ point</div>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: 30}}>
+                <div onClick={() => this.setOtherScore(this.state.otherScore+1)} style={{backgroundColor: '#80FF72', marginBottom: 15, height: 60, width: 100, borderStyle: 'solid', borderWidth: 3, borderRadius: 12, cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>+ point</div>
                 
                 <div style={{display: 'flex', }}>
                   Score: <div style={{width: 10}}/><b> {this.state.otherScore}</b>
